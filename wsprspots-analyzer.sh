@@ -10,4 +10,5 @@ do
 
   Rscript wsprspots-per-hour.r ${file}-${call}.csv ${file}-per-hour-${call}.png $call $dates
   Rscript wsprspots-snr-diff.r ${file}-${call}.csv ${file}-PI4THT.csv ${file}-snr-diff-${call}.png $call $dates
+  Rscript wsprspots-snr-norm.r ${file}-${call}.csv ${file}-snr-norm-${call}.png $call $dates
 done
