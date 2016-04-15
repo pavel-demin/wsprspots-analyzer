@@ -39,7 +39,7 @@ for(i in 1:length(bands))
   spots[band == bands[i], name := names[i]]
 }
 
-subset <- spots[time >= as.POSIXct(date1) & time <= as.POSIXct(date2)]
+subset <- spots[time >= as.POSIXct(paste0(date1, ' 00:00:00')) & time <= as.POSIXct(paste0(date2, ' 23:59:59'))]
 
 palette <- rev(brewer.pal(length(names), 'Set3'))
 names(palette) <- names
