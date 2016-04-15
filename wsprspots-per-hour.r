@@ -22,8 +22,8 @@ colNames <- c('id', 'epoch', 'rcall',
   'rgrid', 'snr', 'freq', 'call',
   'grid', 'power', 'drift', 'distance',
   'azimuth', 'band', 'version', 'code')
-colClasses = c('numeric', 'numeric', 'character', 
-  'character', 'numeric', 'numeric', 'character', 
+colClasses = c('numeric', 'numeric', 'character',
+  'character', 'numeric', 'numeric', 'character',
   'character', 'numeric', 'numeric', 'numeric',
   'numeric', 'numeric', 'character', 'numeric')
 
@@ -46,7 +46,7 @@ names(palette) <- names
 
 png(file2, width = 760, height = 570, res = 120)
 
-ggplot(data = subset, aes(time, fill = factor(name, levels = names))) + 
+ggplot(data = subset, aes(time, fill = factor(name, levels = names))) +
   geom_histogram(binwidth = 3600) +
   scale_fill_manual(values = palette) +
   scale_x_datetime(breaks = date_breaks('1 day'), minor_breaks = date_breaks('1 hour')) +
