@@ -24,7 +24,7 @@ colNames <- c('id', 'epoch', 'rcall',
   'rgrid', 'snr', 'freq', 'call',
   'grid', 'power', 'drift', 'distance',
   'azimuth', 'band', 'version', 'code')
-colClasses = c('numeric', 'numeric', 'character',
+colClasses <- c('numeric', 'numeric', 'character',
   'character', 'numeric', 'numeric', 'character',
   'character', 'numeric', 'numeric', 'numeric',
   'numeric', 'numeric', 'character', 'numeric')
