@@ -61,7 +61,7 @@ subset <- diff[time >= as.POSIXct(paste0(date1, ' 00:00:00')) & time <= as.POSIX
 
 p <- lapply(2:7, function(i)
   ggplot(data = subset[band == freqs[i]], aes(x = time, y = diff)) +
-    geom_point() + scale_color_hue() +
+    geom_point() +
     scale_x_datetime(breaks = date_breaks('1 day'), minor_breaks = date_breaks('1 hour')) +
     theme(axis.text.x = element_text(angle = 45)) +
     labs(title = bands[i]) + labs(x = '', y = 'average SNR difference') +
